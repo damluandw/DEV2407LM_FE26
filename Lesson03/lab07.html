@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập 7 - To do List</title>
+    </head>
+    <body>
+        <form action method="post"
+            style="width: 22rem; border: 1px solid #ccc; padding: 0.5rem;">
+            <legend>To Do List</legend>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <label for="item">Item</label><br>
+                            <input style="width: 10rem;" type="text" name="item"
+                                id="item">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label for="description">Description</label>
+                            <br>
+                            <textarea style="width: 10rem;" name="description"
+                                id="description"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="priotity">Priotity</label>
+                            <br>
+                            <input style="width: 10rem;" type="text"
+                                name="priotity" id="priotity">
+                        </td>
+                        <td style="width: 10rem;">
+                            <label for="category">Category</label>
+                            <br>
+                            <select style="width: 100%; border: 2px solid red;" name="caterory"
+                                id="category">
+                                <option value="person">Personal</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label for>Due Date</label> <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input style="width: 2rem;" type="text" name="ngay"
+                                id="ngay"> /
+
+                        </td>
+                        <td>
+                            <input style="width: 2rem;" type="text" name="thang"
+                                id="thang"> /
+
+                        </td>
+                        <td>
+                            <input style="width: 4rem;" type="text" name="nam"
+                                id="nam">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align: center; width: 2rem;">MM</div>
+
+                        </td>
+                        <td>
+                            <div style="text-align: center; width: 2rem;">DD</div>
+                        </td>
+                        <td>
+                            <div style="text-align: center; width: 4rem;">YY</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for>Status</label>
+                            <br>
+                            <input type="checkbox" name="status" id="status">
+                            <label for="checkbox">Done</label>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="submit" id="submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
