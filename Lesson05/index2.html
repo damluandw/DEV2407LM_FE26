@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tương tác với thẻ HTML</title>
+    <style>
+        /* Tương tác với tên thẻ HTML */
+        h2{
+            background-color: aqua;
+        }
+        /* Tương tác với tên ID của thẻ HTML */
+        #zone2{
+            background-color: coral;
+        }
+        /* Tương tác với tên class của thẻ HTML */
+        .cl-h4{
+            color: brown;
+        }
+        /* Tương tác với tên thuộc tính */
+        input[type='text']{
+            border: solid 2px red;
+        }
+        /* h4[class='cl-h4']{
+            color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Tương tác với tên thẻ HTML -->
+     <div id="zone1">
+        <h2>Tương tác với tên thẻ HTML</h2>
+     </div>
+    <!-- Tương tác với tên ID của thẻ HTML -->
+     <div id="zone2">
+        <h3>Tương tác với tên ID của thẻ HTML</h3>
+     </div>
+     <!-- Tương tác với tên class của thẻ HTML -->
+     <div id="zone3">
+        <h4 class="cl-h4">Tương tác với tên class của thẻ HTML</h3>
+     </div>
+     <!-- Tương tác với tên thuộc tính -->
+      <div id="zone4">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password"><br>
+        <label for="age">Tuổi</label>
+        <input type="text" name="age" id="age"><br>
+      </div>
+</body>
+</html>
