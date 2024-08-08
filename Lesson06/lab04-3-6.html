@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+           /* reset css */
+           *{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .font-bold{
+            font-weight: bold;
+        }
+        /* reset css */
+        ul{
+            width:200px;
+        }
+        nav>ul{
+            position: relative;
+        }
+        nav>ul>li{
+           
+            display: flex;
+            /* width:200px; */
+            border: solid 1px #ccc;
+        }
+        li{
+            padding: 0.5rem;
+        }
+        .sub-menu{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 9rem;
+            flex-wrap: wrap;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Dịch vụ</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="#">Dịch vụ</a>
+                        </li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="#">Dịch vụ</a>
+                        </li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
