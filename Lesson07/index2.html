@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biến JS</title>
+    </head>
+    <body>
+        <script>
+        // Khai báo biến
+        // const - hằng số
+        const PI =3.14;
+        console.log("Giá trị của PI: ",PI);
+        // không khai báo được lại với const
+        // PI = 3.25;
+        // Khai báo biến với var
+        var x= 3;
+        console.log("x: ",x);
+        x = "Đàm Luận"
+        console.log("x: ",x);
+        // Khai báo biến với let
+        let y = 4;
+        console.log("y: ",y);
+
+        y = x;
+        console.log("y: ",y);
+        document.write("<h2>y: ",y,"</h2>")
+        // Sử dụng confirm và prompt
+        // var check = confirm("Bạn trên 18 tuổi phải không");
+        // document.writeln("Giá trị check: ",check);
+        // var name = prompt("Nhập tên của bạn");
+        // document.writeln("<br/>Tên của bạn là:",name);
+        var number =4
+        if(++number >4){
+            document.writeln("<br/>sử dụng dấu ++ trước - number: ",number);
+        }
+        number =4
+        if(number++ >4){
+            document.writeln("<br/>sử dụng dấu ++ sau - number:",number);
+        }
+        document.writeln("<br/>number: ",number);
+        // Sử dụng phép so sánh
+        document.writeln("<br/>So sánh 3 == 4 : ",3==4);
+        document.writeln("<br/>So sánh 3 == '3': ",3=='3');
+        document.writeln("<br/>So sánh 3 == '4': ",3=='4');
+        document.writeln("<br/>So sánh 3 === '3': ",3==='3');
+        document.writeln("<br/>So sánh 'abc' == 'abc': ",'abc'=='abc');
+        document.writeln("<br/>So sánh 'abc' === 'abc': ",'abc'==='abc');
+        document.writeln("<br/>So sánh 'abc' == 'abcd': ",'abc'==='abcd');
+
+        document.writeln("<br/>So sánh 3 > 4 : ",3>4);
+        document.writeln("<br/>So sánh 3 > '3': ",3>'3');
+        document.writeln("<br/>So sánh 4 > '3': ",3>'3');
+
+        // Toán tử logic !,&&, OR
+        // ! đảo ngược trạng thái
+        var check1 =true;
+        document.writeln("<br/>check1: ",check1);
+        document.writeln("<br/>!check1: ",!check1);
+
+        var number2 = 9
+        // && lệnh AND
+        if(number2 >3 && number2 <8){
+            document.writeln("<br/>number2 >3 && number2 <8: ",number2);
+        }
+
+        // || lệnh OR
+        if(number2 <3 || number2 >8){
+            document.writeln("<br/>number2 <3 || number2 >8: ",number2);
+        }
+        // Toán tử gán
+        // =,
+        // Giá trị được gán = giá trị gán/biểu thức gán
+        var number3 = 6+3;
+        //+=,-=, *=,/=,%=
+
+        // Giá trị được gán (các phép số học)= giá trị(biểu thức)
+        // <=> giá trị được gán = giá trị được gán  (các phép số học)  giá trị(biểu thức)
+        // ví dụ: 
+        var number4  = 4;
+        number4+=3; //tương đương với number4 = number4 + 3
+        document.write("<br/> number4+=3:",number4);
+
+        number4  = 4;        
+        number4-=3; //tương đương với number4 = number4 - 3
+        document.write("<br/> number4-=3:",number4);
+        number4  = 4;
+        number4*=3; //tương đương với number4 = number4 * 3
+        document.write("<br/> number4*=3:",number4);
+        number4  = 4;
+        number4/=3; //tương đương với number4 = number4 / 3
+        document.write("<br/> number4/=3:",number4);
+        number4  = 4;
+        number4%=3; //tương đương với number4 = number4 % 3
+        document.write("<br/> number4%=3:",number4);
+
+
+        // Toán tử đặc biệt
+        if(5>3){
+            document.write("<br/> 5>3 là đúng");
+        }else{
+            document.write("<br/> 5>3 là sai");
+        }
+        // () ? "giá trị trả về nếu đúng" : "giá trị trả về nếu sai"
+        (5>3)?document.write("<br/> 5>3 là đúng"):document.write("<br/> 5>3 là sai");
+        //Typeof("biến/số/ký tự") => giá trị trả về là kiểu dữ liệu
+        document.write("<br/>Kiểu dữ liệu của number4: ",typeof(number4) )
+        document.write("<br/>Kiểu dữ liệu của 'abc': ",typeof('abc') );
+        document.write("<br/>Kiểu dữ liệu của check1: ",typeof(check1) );
+    </script>
+    </body>
+</html>
