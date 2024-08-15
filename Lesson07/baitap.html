@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập</title>
-</head>
-<body>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập</title>
+    </head>
+    <body>
+        <script>
         // Bài 1: Đọc dữ liệu từ promt và in ra màn hình họ tên, ngày tháng năm sinh
         // tuổi, quê quán
 
@@ -33,8 +33,20 @@
         // Bài 7: Nhập vào một ký tự bất kỳ. Kiểm tra đó có phải là kiểu số hay không?
         // Nếu đúng đưa về thông báo true
         // Nếu sai yêu cầu nhập lại
-
+        do{
+            var input = prompt("Nhập vào ký tự bất kỳ");
+            var check = false;
+            if(input==0||input==1||input==2||input==3||input==4||input==5||input==6||input==7||input==8||input==9 ){
+                alert("True");
+                let check2 = confirm("Bạn có muốn chạy lại chương trình không");         
+                check = check2;
+            }else{
+                alert("Vui lòng nhập lại");
+                check = true;
+            }
+        }while(check);
+        
 
     </script>
-</body>
+    </body>
 </html>

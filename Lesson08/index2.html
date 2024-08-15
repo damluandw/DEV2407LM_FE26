@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm trong JS</title>
+</head>
+<body>
+    <script>
+        //Hàm
+        //Sytax:
+        // function tên_hàm(tham_số_1,tham_số_2,..){ khối thực thi} 
+        //  tham số có thể có hoặc không
+        function tinhTong(a,b){            
+            return a+b;
+        }
+        function tinhHieu(a,b){            
+            return a-b;
+        }
+        function phepChia(a,b){            
+            return a/b;
+        }
+        function phapNhan(a,b){            
+            return a*b;
+        }
+        var number1 =9;
+        var number2 = 5
+        var result = tinhTong(number1,number2)
+        document.write("<br/>",number1,"+",number2,"= ",result );
+        // document.write("<br/>",5,"+",6,"= ",tinhTong(5,6) );
+        var result = tinhHieu(number1,number2)
+        document.write("<br/>",number1,"-",number2,"= ",result );
+        var result = phepChia(number1,number2)
+        document.write("<br/>",number1,"/",number2,"= ",result );
+        var result = phapNhan(number1,number2)
+        document.write("<br/>",number1,"*",number2,"= ",result );
+
+
+        function tinhTong2(a,b){      
+            var  result = a+b;
+            document.write("<br/>",a,"+",b,"= ",result );
+            return result;
+        }
+
+        tinhTong2(3,3)
+        tinhTong2(5,6)
+        tinhTong2(8,9)
+
+    </script>
+</body>
+</html>

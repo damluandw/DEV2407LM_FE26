@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Đăng nhập</title>
+        <style>
+            p{
+                display: none;
+            }
+            .active{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="frm">
+            <div>
+                <label for="userName">User Name</label>
+                <input type="text" name="userName" id="userName">
+                <p id="errName">Tên đăng nhập không được bỏ trống</p>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <p id="errPass">Mật khẩu không được bỏ trống</p>
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember</label>
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" value="Đăng nhập"
+                    onclick="login()">
+            </div>
+        </form>
+        <script>
+            function login(){
+                event.preventDefault()
+                //kiểm tra xem nhận được dữ liệu đầu vào hay chưa
+                // console.log(frm.userName.value);
+                // console.log(frm.password.value);
+                if(frm.userName.value == ""){
+                    // alert("Tên đăng nhập không được bỏ trống");
+                    // return;
+                    document.getElementById("errName").classList.add("active")
+                    // document.getElementById("errName").style.display="block";
+                    // document.getElementById("errName").style.color="red";
+                    return;
+                }else{
+                    document.getElementById("errName").style.display="none";
+                }
+                if(frm.password.value=== ""){
+                    // alert("Mật khẩu không được bỏ trống");
+                    // return;
+                     document.getElementById("errPass").style.display="block";
+                     document.getElementById("errPass").style.color="red";
+                     return;
+                }else{
+                    document.getElementById("errPass").style.display="none";
+                }
+                if(frm.userName.value === "DamLuan" && frm.password.value === "12345" ){
+                    alert("Đăng nhập thành công");
+                    return;
+                }else{
+                    alert("Sai tên đăng nhập hoặc mật khẩu");
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>
