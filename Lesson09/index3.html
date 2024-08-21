@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular</title>
+</head>
+<body>
+    <script>
+        var regx = /devmaster/
+        if(regx.test("chào mừng bạn đến với devmaster")){
+            document.write("trong chuỗi 'chào mừng bạn đến với devmaster' có chứa ký tự devmaster");
+        }else{
+            document.write("trong chuỗi 'chào mừng bạn đến với devmaster' không chứa ký tự devmaster");
+        }
+
+        regx = /l+/
+        if(regx.test("hello")){
+            document.write("<br/>trong chuỗi 'hello' có chứa ký tự n liên tiếp");
+        }else{
+            document.write("<br/>trong chuỗi 'hello' không chứa ký tự n liên tiếp");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đối tượng trong JS</title>
+    </head>
+    <body>
+        <script>
+        // Đối tượng
+        // Khai báo đối tượng
+        // Sytax:
+        // Cách1:  var name_Object = new Object();
+        // Cách 2: var name_Object = {}     
+        var object1=  new Object();
+        var object2 = {}
+        console.log("object2: ", object2);
+        // Gán thuộc tính đối tượng/khai báo thuộc tính
+        // name_Object = value
+        object1.name = 'object1';
+        object1.age = 0;
+        console.log("object1: ", object1);
+        // 
+        var object3 = {
+            name: 'object3',
+            age: 0,
+        }
+        console.log("object3: ",object3);
+        // Phương thức đối tượng
+        // khai báo phương thức đối tượng
+        var object4= {
+            info : function(){
+                // câu lệnh thực thi
+                document.write("Phương thức đối tượng object4")
+            }
+        }
+        // gọi đến phương thức info của đối tượng object4
+        object4.info();
+        // khai báo phương thức đối tượng của object3
+        object3.info  = function(){
+              // câu lệnh thực thi
+              document.write("\nPhương thức đối tượng object 3")
+        }
+
+          // gọi đến phương thức info của đối tượng object4
+        object3.info();
+
+        // Chú ý: 
+        // khai báo trong {} thì sử dụng :
+        // khai báo ngoài thì sử dụng dấu  =
+    </script>
+    </body>
+</html>
