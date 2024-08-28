@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng jquery</title>
+    <style>
+        .cl-blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tương tác thông qua thẻ HTML</h1>
+    <h2 class="t-h2">Tương tác với thẻ HTML thông qua class</h2>
+    <h3 id="t-id">Tương tác với thẻ HTML thông qua ID</h3>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita omnis aspernatur, doloribus sunt enim officiis distinctio, laudantium cum suscipit voluptatibus reiciendis. At eligendi cum voluptatum error nulla libero temporibus?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, neque cumque reprehenderit aliquam animi dolore blanditiis provident numquam eum officiis minima harum cum autem doloribus deleniti quibusdam ullam minus magnam!</p>
+    <!-- Cách 1: -->
+    <!-- <script src="js/jquery.js"></script> -->
+
+    <!-- Cách 2  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Tương tác thông qua thẻ HTML
+        $('body').append("Hello world");
+        $('h1').css('color','red');
+        // Tương tác với thẻ HTML thông qua class
+        $('.t-h2').addClass("cl-blue");
+        // Tương tác với thẻ HTML thông qua ID
+        $('#t-id').addClass("cl-blue");
+        //
+        $('div>p').css('background-color','rgb(61, 185, 74)');
+    </script>
+</body>
+</html>
