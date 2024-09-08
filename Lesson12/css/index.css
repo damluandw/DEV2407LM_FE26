@@ -1,0 +1,36 @@
+#banner-trang-chu{
+    background-image: url(../imgs/banner_trangchu.jpg);
+    height: 51.5rem;
+}
+
+#banner-trang-chu .container{
+    position: relative;
+}
+
+#banner-trang-chu .banner-content{
+    position: absolute;
+    top: 7.25rem;
+    left: 3.25rem;
+}
+
+#banner-trang-chu h3,#banner-trang-chu h3>span{
+    font-family: Gotham-Ultra;
+    font-size: 2.875rem;
+    text-transform: uppercase;
+
+}
+#banner-trang-chu p {
+    width: 35rem;
+    text-align: justify;
+}
+
+
+#banner-trang-chu .btn-banner{
+    background-color: #bd945f;
+    padding: 1.25rem 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Gotham-Ultra;
+    color: #fff;
+}
