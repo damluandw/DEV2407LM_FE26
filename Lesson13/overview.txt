@@ -1,0 +1,142 @@
+1. HTML
+    - Giới thiệu về các thẻ:
+        + thẻ đầy đủ: <tên_thẻ> </tên_thẻ> 
+            ex: <div> </div>
+        + thẻ thiếu: <tên_thẻ/>
+            ex: <br/>; <img/>
+    - Table và Form:
+        +Table
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        ...
+                        <th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                        </td>
+                        ...
+                        <td>
+                        </td>
+                    </tr>
+                    ...
+                    <tr>
+                        <td>
+                        </td>
+                        ...
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                        </td>
+                        ...
+                        <td>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        +Form
+            <form>
+                <input type=""/>
+                ...
+                ...
+                <input type="submit/button"/>
+                <button></button>   
+            </form>
+    - Thẻ bố cục nội dung
+2. CSS
+    - Cách sử dụng CSS
+        + css trên thẻ HTML
+            <h3 style ="color: red">CSS trong thẻ HTML</h3>
+        + css trong file HTML
+            <style>
+                h3{
+                    color: red
+                }
+            </style>
+        + sử dụng link đến file CSS
+            viết trong file có đuôi .css
+            ->  <link rel="stylesheet" href="đường dẫn tới file css">
+    - Cách tương tác với thẻ HTML
+        + CSS tương tác với tên thẻ HTML (1)
+        + CSS tương tác với ID của thẻ HTML (2)
+        + CSS tương tác với tên class của thẻ HTML (3)
+        + CSS tương tác với tên thuộc tính (4)
+    - Mức độ ưu tiên trong CSS
+        + CSS sẽ lấy giá trị cuối
+        + CSS sẽ lấy giá trị với bộ chọn cụ thể nhất (cấp chi tiết nhất)
+        + thứ tự ưu tiên với CSS cùng cấp bộ chọn:  !important (4) -> (2) -> (3) -> (1)
+    - Responsive:
+        @media (min-width: ) and (max-width: ){
+           // nội dung thay đổi khi khi kích thước từ  đến 
+        }
+        + <600px - điện thoại
+            @media (max-width: 600px){
+                // nội dung thay đổi khi khi kích thước từ  đến 
+            }
+        + 600px - 992px - máy tính bảng
+             @media (min-width: 600px) and (max-width: 992px){
+                // nội dung thay đổi khi khi kích thước từ  đến 
+            }
+        + >992px - máy tính
+            @media (min-width: 992px){
+                // nội dung thay đổi khi khi kích thước từ  đến 
+            }
+    - Tìm hiểu thêm: @keyframes
+    - Lưu ý:
+        + khi import link thì import các thư viện -> các CSS dùng chung -> CSS của trang
+3. JavaScript
+    - Ngôn ngữ:
+        + Systax:
+            - Khai báo biến/obeject/mảng
+            - Câu lệnh rẽ nhánh : if else/ switch case
+            - Vòng lặp: for/ foreach/ for in / while/ do while
+            - Function:  function (khai báo hàm, và sử dụng hàm)
+            - Câu lệnh điều khiển: return, break, continue
+            - Toán tử : +,-,*,/,++,--, %
+            - toán tư so sánh: ==,!=, ===, >,< >=,<=
+            - toán tử gán: =, += , -= , *=,/=, %=
+            - toán tử logic: &&, ||, !
+            - toán tử đặc biệt: () ? : , Typeof()
+    - Tương tác với thẻ HTML
+        + DOM: 
+            - systax: bắt đầu bằng từ: document.
+            - Các cách tương tác tới thẻ/element trong JavaScript
+                + tương tác thông qua thuộc tính ID : document.getElementById()
+                + tương tác với tên thẻ HTML : document.getElementByTagName()
+                + tương tác thông qua thuộc tính class: document.getElementByClassName()
+                + thông qua cú phép css selecter: document.querySelectorAll()
+            - Sự kiện (Event) trong JavaScript: onclick/onchange....
+            - Regular expression/Date time
+        + Jquery
+            - Systax: bắt đầu bằng từ: $("")
+            - Các cách tương tác tới thẻ/element trong JavaScript: tương tác giống với CSS
+            - Sự kiện (Event) trong JavaScript: onclick/onchange....
+            - Một số hàm có sẵn của Jquery
+4. Bootstrap/Slick
+    - Cách sử dụng Bootstrap: 
+        b1: import thư viện
+        b2: sử dụng copy đoạn code trên trang Bootstrap/ sử dụng class có sẵn của Bootstrap
+        b3: CSS lại theo đúng chuẩn thiết kế (sử dụng class của Bootstrap hoặc CSS lại)
+    - Lưu ý của sử dụng Bootstrap:
+        + tránh việc css lại class của Bootstrap
+    - Cách sử dụng Slick: 
+        b1: import thư viện
+        b2: vào đoạn code script -> copy đoạn code $('.single-item').slick({});  -> thay thế class hoặc con trỏ 
+            //vào trang https://kenwheeler.github.io/slick/ copy đoạn code theo mẫu cần thiết kế
+        b3: thêm 1 số thuộc tính vào trong ngoặc xoắn {}
+        b4: CSS lại  theo đúng chuẩn thiết kế
+
+5. Cắt ghép giao diện
+    - Một số phím tắt
+    - Các cách cắt ảnh
+    - Xem cỡ chữ, font chữ, màu, kích thước.
+

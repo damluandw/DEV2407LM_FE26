@@ -1,0 +1,82 @@
+1. Phân trang:
+B1: Xác định bài toán
+- xác định lấy dữ liệu
+    - List sản phẩm (lấy dữ liệu từ API/ localstorage)
+- Cần làm gì??
+    -> load sản phẩm/ hiển thị sản phẩm ra màn hình
+    -> phân trang:
+        - trang bao nhiêu
+        - số lượng sản phẩm trên 1 trang( sản phẩm từ vị trí bao nhiêu -> vị trí bao nhiêu)
+        - tổng số trang
+B2: 
+    - Lấy sản phẩm 
+B3: 
+    - xử lý bài toán hiển thị
+        + hiển thị 1 sản phẩm 
+        + hiển thị nhiều sản phẩm
+B4: 
+    - xử lý phân trang
+        + khai báo báo biến kiểm soát các tham số cần thiết
+        + xây hàm để cập nhật các tham số
+B5: 
+    - xử lý bài toán hiển thị khi chia trang
+        + hiển thị 1 sản phẩm (lấy từ bài toán hiện thị nhiều sản phẩm)
+        + hiển thị nhiều sản phẩm khi chia trang
+
+B6:
+    - xử lý sự kiện khi thay đổi page
+        + các thẻ page tương tác
+            -> hiển thị các page(số lượng page) 
+            -> giống hiện thị sản phẩm
+                (xác định số lượng page/ hiển thị như thế nào)
+        + xử lý kiện click ->  bắt được value của page
+                (page thứ bao nhiều -> gán lại giá trị page)
+B7: 
+    - xử lý lại các giá trị phân trang
+B8:
+    - hiển thị lại dữ liệu.
+
+2. Tìm kiếm 
+B1: Xác định bài toán
+- xác định lấy dữ liệu
+    - List sản phẩm (lấy dữ liệu từ API/ localstorage)
+- Cần làm gì??
+    -> load sản phẩm/ hiển thị sản phẩm ra màn hình
+    -> tìm kiếm:
+        - tham số tìm kiếm 
+B2: 
+    - Lấy sản phẩm 
+B3: 
+    - xử lý bài toán hiển thị
+        + hiển thị 1 sản phẩm 
+        + hiển thị nhiều sản phẩm
+B4: 
+    - xử lý tìm kiếm 
+        + giá trị cần tìm kiếm -> đọc từ thẻ input (giá trị khác trống/null)
+B5: 
+    - so sánh giá trị cần tìm kiếm với list sản phẩm
+B6: 
+    - hiển thị kết quả phù hợp
+
+
+3. Phân trang và tìm kiếm
+    - lưu ý list sản phẩm truyền vào để hiển thị ra ngoài màn hình
+
+
+    
+        function search(list){
+            // xử lý tìm kiếm
+            return tempList
+        }
+
+
+        function pages(list){
+            // xử lý chia page
+            return tempList
+        }
+
+        function searchPage(list){
+           var tempList =   search(list);
+            var tempList2 = pages(tempList);
+            return tempList2;
+        }
